@@ -157,3 +157,18 @@ video{
     }
 }
 
+@media screen and (max-width:390px) {
+    
+    .container{
+        width:91%;
+    }
+    .box3{
+        font-size: 14px;
+    }
+
+    .forgot-pass{
+        font-size: 8px;
+    }
+}
+
+
