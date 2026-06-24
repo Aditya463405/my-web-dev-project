@@ -4,55 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./calculator.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-      <div id="main">
-        <div class="first"></div>
-        <div class="second">
-            <div class="buttons">
-                <div><button>mc</button></div>
-                <div><button class="alpha">AC</button></div>
-                <div><button>7</button></div>
-                <div><button>4</button></div>
-                <div><button>1</button></div>
-                <div><button>%</button></div>
-            </div>
-            <div class="buttons">
-                <div><button>m+</button></div>
-                <div><button>x</button></div>
-                <div><button>8</button></div>
-                <div><button>5</button></div>
-                <div><button>2</button></div>
-                <div><button>0</button></div>
-            </div>
-            <div class="buttons">
-                <div><button>m-</button></div>
-                <div><button><sup>+</sup>/<sub>-</sub></button></div>
-                <div><button>9</button></div>
-                <div><button>6</button></div>
-                <div><button>3</button></div>
-                <div><button>.</button></div>
-            </div>
-            <div class="buttons">
-                <div><button>mr</button></div>
-                <div><button>/</button></div>
-                <div><button>*</button></div>
-                <div><button>-</button></div>
-                <div><button>+</button></div>
-                <div><button>=</button></div>
-            </div>
-        </div>
-        <div class="foot">
-            <p>Made with <span class="heart">&#x2764;</span> by <span class="name">Aditya</span> 😎</p>
-        </div>
-        </div>
-      </div>
 
+    <div id="root">
+        <div id="toggle">
+            <button class="day toogle-button">☀️</button>
+            <button class="night toogle-button">🌑</button>
+        </div>
+        <div class="display-content" id="displaycontent">0</div>
 
+        <div class="input-area">
+            <button class="input" id="All-clear">AC</button>
+            <button class="input back-btn">&#9003;</button>
+            <button class="input sign-btn">+/-</button>
+            <button class="input div-btn">/</button>
+            <button class="input number">7</button>
+            <button class="input number">8</button>
+            <button class="input number">9</button>
+            <button class="input mul-btn">x</button>
+            <button class="input number">4</button>
+            <button class="input number">5</button>
+            <button class="input number">6</button>
+            <button class="input sub-btn">-</button>
+            <button class="input number">1</button>
+            <button class="input number">2</button>
+            <button class="input number">3</button>
+            <button class="input add-btn">+</button>
+            <button class="input mod-btn">%</button>
+            <button class="input number">0</button>
+            <button class="input decimal-btn">.</button>
+            <button class="input" id="Equal">=</button>
+        </div>
+    </div>
+    <script src="first.js"></script>
 </body>
 </html>
