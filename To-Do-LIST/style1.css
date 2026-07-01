@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+
+    radial-gradient(circle at top right,#2563EB22,transparent 30%),
+    radial-gradient(circle at bottom left,#7C3AED22,transparent 35%),
+
+    linear-gradient(
+    135deg,
+    #020617,
+    #0F172A,
+    #1E3A8A
+    );
+
+}
+
+#main{
+    min-height:310px;
+    width:100%;
+    max-width: 380px;
+    border: 1px solid rgba(255,255,255,.08);
+    padding:20px;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background:rgba(15,23,42,.55);
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    transition: box-shadow 0.20s linear,
+                transform 0.30s linear;
+}
+
+#main:hover{
+    box-shadow: 0 15px 35px rgba(37,99,235,.35);
+
+    transform: translateY(-5px);
+}
+
+h1{
+    font-family: "DM Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: azure;
+    text-transform: uppercase;
+}
+
+#logoin-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:8px;
+}
+
+.name input{
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    letter-spacing: 1px;
+    color: white;
+    background:#111827;
+    transition: box-shadow 0.25s ease;
+}
+
+.name input:hover{
+    box-shadow: 0 0 8px #f5f5f5;
+}
+
+.name input:focus{
+    border-color:#3B82F6;
+    box-shadow:0 0 10px rgba(59,130,246,.35);
+}
+
+.name input::placeholder{
+    color:#94A3B8;
+}
+
+.name label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: whitesmoke;
+}
+
+button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 8px;
+    border: 1px solid transparent;
+    font-size: medium;
+    font-weight: bold;
+    transition: box-shadow 0.20s linear;
+    background: #2563EB;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(37,99,235,.35);
+}
+
+button:hover{
+    box-shadow: 0 0 10px rgba(37,99,235,.35);
+    background: #3B82F6;
+}
+
+button:active{
+    background-color: brown;
+    color:whitesmoke;
+}
+
+.subtitle{
+    margin-top: -18px;
+    margin-bottom: 25px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .6px;
+    line-height: 1.6;
+
+    color: rgba(203,213,225,.85);
+
+    text-align: center;
+}
