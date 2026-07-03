@@ -379,6 +379,21 @@ button:hover{
     transform:translateY(-3px) scale(1.03);
 }
 
+.footer{
+    height: 40px;
+    background: radial-gradient(circle at top right,#2563EB22,transparent 30%),
+                radial-gradient(circle at bottom left,#7C3AED22,transparent 35%),
+                linear-gradient(
+                135deg,
+                #0F172A,
+                #1E3A8A
+    );
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 ::-webkit-scrollbar{
 
 width:8px;
