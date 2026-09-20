@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    padding: 25px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid #26334d;
+
+    background: #111c32;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+
+/* ================= LIVE STATUS ================= */
+
+.market-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px 14px;
+
+    border-radius: 20px;
+
+    background: #16243d;
+
+    color: #cbd5e1;
+
+    font-size: 14px;
+}
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    background: #22c55e;
+
+    border-radius: 50%;
+
+    animation: livePulse 1.5s ease-in-out infinite;
+}
+
+@keyframes livePulse {
+    0% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7);
+    }
+
+    50% {
+        opacity: 0.4;
+        box-shadow: 0 0 0 6px rgba(34, 197, 94, 0);
+    }
+
+    100% {
+        opacity: 1;
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0);
+    }
+}
+
+
+/* ================= CONTAINER ================= */
+
+.container {
+    width: 86%;
+    max-width: 1400px;
+
+    margin: auto;
+
+    padding: 45px 0;
+}
+
+
+.title-section {
+    margin-bottom: 30px;
+}
+
+.title-section h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.title-section p {
+    color: #94a3b8;
+}
+
+
+/* ================= GRID ================= */
+
+.crypto-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 20px;
+}
+
+
+/* ================= CARD ================= */
+
+.crypto-card {
+    padding: 22px;
+
+    background: #17233a;
+
+    border: 1px solid #263652;
+
+    border-radius: 15px;
+
+    transition: 0.25s;
+}
+
+.crypto-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #475f86;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================= COIN TOP ================= */
+
+.coin-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.coin-info {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.coin-image {
+    width: 45px;
+    height: 45px;
+}
+
+.coin-info h3 {
+    font-size: 17px;
+
+    margin-bottom: 4px;
+}
+
+.coin-info span {
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+.rank {
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* ================= PRICE ================= */
+
+.price {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= DETAILS ================= */
+
+.coin-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #263652;
+}
+
+.coin-details div {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.coin-details span {
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.coin-details strong {
+    font-size: 14px;
+}
+
+.positive {
+    color: #22c55e;
+}
+
+.negative {
+    color: #ef4444;
+}
+
+
+/* ================= LOADING ================= */
+
+.loading-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #0f172a;
+}
+
+.loading-container p {
+    color: #64748b;
+}
+
+.loader {
+    width: 45px;
+    height: 45px;
+
+    border: 4px solid #263652;
+
+    border-top: 4px solid white;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ================= ERROR ================= */
+
+.error-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background: #0f172a;
+}
+
+.error-container p {
+    color: #ef4444;
+}
+
+.error-container button {
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+}
+
+.error-container button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 20px;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+
+        gap: 10px;
+    }
+
+    .header h1 {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+
+    .market-status {
+        padding: 7px 10px;
+        font-size: 12px;
+
+        white-space: nowrap;
+    }
+
+    .container {
+        width: 92%;
+        padding: 30px 0;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+}
