@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { FetchData } from "./slice1";
+import { FetchData } from "slice1";
 
 import "./coin.css";
 
